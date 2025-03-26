@@ -38,6 +38,11 @@ public class WebTableTest {
 		  {
 			  System.out.println(y);
 		  }
+
+		for (WebElement z : items)
+		  {
+			  System.out.println(z);
+		  }
 		  
 		  
 		  
