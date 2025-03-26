@@ -34,6 +34,11 @@ public class WebTableTest {
 			  System.out.println(x);
 		  }
 		  
+		  for (WebElement y : items)
+		  {
+			  System.out.println(y);
+		  }
+		  
 		  
 		  
 		  
