@@ -1,6 +1,7 @@
 package testScripts;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -28,12 +29,12 @@ public class GooglePageTest {
 	  
 	  driver.manage().window().maximize();
 
-//	  WebElement name = driver.findElement(By.id("username"));
+	  WebElement name = driver.findElement(By.id("username"));
 //	  WebElement name = driver.findElement(By.xpath("//input[@type='text' and  @name='username']"));
 	  
 //	  WebElement name = driver.findElement(By.cssSelector("#username"));
 	  
-	  WebElement name = driver.findElement(By.cssSelector("input.text' and  name.username"));
+//	  WebElement name = driver.findElement(By.cssSelector("input.text' and  name.username"));
 
 	  
 	  
@@ -42,11 +43,19 @@ public class GooglePageTest {
 	  
 	  name.sendKeys("tomsmith");
 	  
+	  name.clear();
+	  name.sendKeys("tomsmith");
+
+	  
 	  WebElement password = driver.findElement(By.id("password"));
 	  password.sendKeys("SuperSecretPassword!");
 	  
 	  WebElement button = driver.findElement(By.className("radius"));
-	  button.click();
+//	  button.click();
+	  
+//	  button.submit();
+	  
+	  password.sendKeys(Keys.ENTER);
 	  
 //	  System.out.println(driver.getCurrentUrl());
 //
