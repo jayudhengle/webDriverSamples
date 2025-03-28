@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testScripts.MouseActionTest">
+      <class name="testScripts.WindowsHandleTest">
         <methods>
-          <include name="selectCHeckbox"/>
+          <include name="checkWindows"/>
         </methods>
-      </class> <!-- testScripts.MouseActionTest -->
+      </class> <!-- testScripts.WindowsHandleTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
