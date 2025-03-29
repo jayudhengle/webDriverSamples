@@ -17,12 +17,14 @@ public class CheckBox {
 	  
 	  boolean isSel = 	driver.findElement(By.xpath("(//input[@type='checkbox'])[2]")).isSelected();
 	  
-	  if(isSel)
+	  if(!isSel)
 	  {
 		  driver.findElement(By.xpath("(//input[@type='checkbox'])[2]")).click();
 
 	  }
+	  
+	  driver.quit();
   }
 }
 
-}
+

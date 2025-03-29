@@ -23,7 +23,7 @@ public class AlertTest
 		Alert alert = driver.switchTo().alert();
 		
 		SoftAssert sa = new SoftAssert();
-		sa.assertEquals(alert.getText(), "I am an alert box");
+		sa.assertEquals(alert.getText(), "I am an alert box!");
 		alert.accept();
 		
 		
@@ -40,6 +40,9 @@ public class AlertTest
 		
 		
 		sa.assertAll();	
+		
+		
+		driver.quit();
 		
 		
 	}

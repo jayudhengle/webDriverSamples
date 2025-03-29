@@ -27,23 +27,14 @@ public class WebTableTest {
 		  
 		  driver.manage().window().maximize();
 		  
-		  List<WebElement> items = driver.findElements(By.xpath("//td[contains(text(), 'Master In Selenium')]//following-siblings::td"));
+		  List<WebElement> items = driver.findElements(By.xpath("//td[contains(text(),'Master In Selenium')]//following-sibling::td"));
 		  
 		  for (WebElement x : items)
 		  {
-			  System.out.println(x);
+			  System.out.println(x.getText());
 		  }
 		  
-		  for (WebElement y : items)
-		  {
-			  System.out.println(y);
-		  }
-
-		for (WebElement z : items)
-		  {
-			  System.out.println(z);
-		  }
-		  
+		  driver.quit();
 		  
 		  
 		  

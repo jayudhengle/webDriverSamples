@@ -25,6 +25,7 @@ public class GooglePageTest {
 
 	  
 //	  driver.manage().deleteAllCookies();
+	  driver.manage().window().maximize();
 	  driver.navigate().to("https://the-internet.herokuapp.com/login");
 	  
 	  driver.manage().window().maximize();
@@ -72,7 +73,7 @@ public class GooglePageTest {
 //	  driver.findElement(By.partialLinkText("Elemental")).click();
 	  
 //	  driver.findElement(By.xpath("//i[@class='fa fa-2x fa-sign-in']")).click();
-	  driver.findElement(By.xpath("//button[@class='radius' and type='submit']")).click();
+//	  driver.findElement(By.cssSelector("i.fa")).click();
 	  
 	
 	  
