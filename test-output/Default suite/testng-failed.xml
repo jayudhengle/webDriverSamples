@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testScripts.WindowsHandleTest">
+      <class name="testScripts.JSTest">
         <methods>
-          <include name="checkWindows"/>
+          <include name="jvaScrptValidations"/>
         </methods>
-      </class> <!-- testScripts.WindowsHandleTest -->
+      </class> <!-- testScripts.JSTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
