@@ -2,57 +2,15 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
+    <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testScripts.SearchProduct">
+      <class name="testScripts.BookSearchTest">
         <methods>
-          <include name="selectProduct"/>
+          <include name="tearDowm"/>
+          <include name="testHorrorSearch"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- testScripts.SearchProduct -->
-      <class name="testScripts.PageLoadTimeOutTest">
-        <methods>
-          <include name="testPageLoad"/>
-        </methods>
-      </class> <!-- testScripts.PageLoadTimeOutTest -->
-      <class name="testScripts.AlertTest">
-        <methods>
-          <include name="checkAlert"/>
-        </methods>
-      </class> <!-- testScripts.AlertTest -->
-      <class name="testScripts.RadioButton">
-        <methods>
-          <include name="selectRadioButton"/>
-        </methods>
-      </class> <!-- testScripts.RadioButton -->
-      <class name="testScripts.ExplicitWaitTest">
-        <methods>
-          <include name="testExplicitWait"/>
-        </methods>
-      </class> <!-- testScripts.ExplicitWaitTest -->
-      <class name="testScripts.GooglePageTest">
-        <methods>
-          <include name="seleniumSearch"/>
-        </methods>
-      </class> <!-- testScripts.GooglePageTest -->
-      <class name="testScripts.DisplayTest">
-        <methods>
-          <include name="displayElement"/>
-        </methods>
-      </class> <!-- testScripts.DisplayTest -->
-      <class name="testScripts.WebTableTest">
-        <methods>
-          <include name="dynamicWeb"/>
-        </methods>
-      </class> <!-- testScripts.WebTableTest -->
-      <class name="testScripts.WindowsHandleTest">
-        <methods>
-          <include name="checkWindows"/>
-        </methods>
-      </class> <!-- testScripts.WindowsHandleTest -->
-      <class name="testScripts.MouseActionTest">
-        <methods>
-          <include name="selectCHeckbox"/>
-        </methods>
-      </class> <!-- testScripts.MouseActionTest -->
+      </class> <!-- testScripts.BookSearchTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

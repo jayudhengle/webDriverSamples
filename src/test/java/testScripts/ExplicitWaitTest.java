@@ -1,17 +1,17 @@
 package testScripts;
 
-import javax.xml.datatype.Duration;
+import java.time.Duration;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 public class ExplicitWaitTest {
-  @Test
+  
+ @Test
   public void testExplicitWait() 
   {
 	  	WebDriver driver = new ChromeDriver();
@@ -25,7 +25,7 @@ public class ExplicitWaitTest {
 		wait.until(ExpectedConditions.textToBePresentInElement(
 				driver.findElement(By.cssSelector(".bg-success")), "Data loaded with AJAX get request."));
 		
-		driver.findElement(By.cssSelector(null))
+		driver.findElement(By.cssSelector(null));
 		
 		
 		
