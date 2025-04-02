@@ -16,25 +16,26 @@ import org.testng.annotations.Test;
 public class BookSearchTest 
 {
 	
-	WebDriver driver;	
+	public WebDriver driver=null;	
 	
 	@Parameters("browser")
 	@BeforeMethod
 	public void setUp(String browserName)
 	
 	{
-//		System.out.println(browserName);
-//		if(browserName == "chrome")
-//		{
-//			driver =  new ChromeDriver();
-//		}
-//		
-//		else if(browserName == "edge")
-//		{
-//			driver =  new EdgeDriver();
-//		}
+		System.out.println(browserName);
+		if(browserName.equalsIgnoreCase("chrome"))
+		{
+			driver =  new ChromeDriver();
+		}
 		
-		driver = new ChromeDriver();
+		else if(browserName.equalsIgnoreCase("edge"))
+
+		{
+			driver =  new EdgeDriver();
+		}
+		
+//		driver = new ChromeDriver();
 			
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
@@ -71,7 +72,7 @@ public class BookSearchTest
 	  {
 		  driver.findElement(By.xpath("//a[contains(text(), 'Horror')]")).click();
 		  String tle = driver.getCurrentUrl();
-		  assertTrue(tle.contains("horror1"));
+		  assertTrue(tle.contains("horror"));
 	  }	  
 	  
 	  @AfterMethod

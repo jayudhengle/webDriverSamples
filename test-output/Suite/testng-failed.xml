@@ -7,8 +7,8 @@
       <class name="testScripts.BookSearchTest">
         <methods>
           <include name="tearDowm"/>
-          <include name="testHorrorSearch"/>
           <include name="setUp"/>
+          <include name="testHorrorSearch"/>
         </methods>
       </class> <!-- testScripts.BookSearchTest -->
     </classes>
