@@ -57,7 +57,8 @@ public class BookSearchTest
 		  assertTrue(tle.contains("nove"));
 	  }
 	  
-	  @Test(alwaysRun = true, dependsOnMethods = "testHorrorSearch")
+	  //@Test(alwaysRun = true, dependsOnMethods = "testHorrorSearch")
+	  @Test
 	  public void testFantacySearch() 
 	  {
 		  driver.findElement(By.xpath("//a[contains(text(), 'Fantasy')]")).click();
