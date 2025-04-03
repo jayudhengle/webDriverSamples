@@ -1,10 +1,12 @@
 package parallelScripts;
 
+import java.awt.event.InvocationEvent;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-public class SampleOneTest 
+public class SampleThreeTest 
 {
 	WebDriver driver;
 	
@@ -12,29 +14,30 @@ public class SampleOneTest
 	public void testOne()
 	{
 		long id = Thread.currentThread().getId();
-		System.out.println("Test11 in sampleOne..."+ id);
+		System.out.println("Test31 in sampleThree..."+ id);
 	}
 	
 	@Test
 	public void testTwo()
 	{
 		long id = Thread.currentThread().getId();
-		System.out.println("Test12 in sampleOne..."+ id);
+		System.out.println("Test32 in sampleThree..."+ id);
 	}
 	
 	@Test
 	public void testThree()
 	{
 		long id = Thread.currentThread().getId();
-		System.out.println("Test13 in sampleOne..."+ id);
+		System.out.println("Test33 in sampleThree..."+ id);
 	}
 	
-	@Test
+	@Test(invocationCount = 6, threadPoolSize = 3, timeOut = 1000)
 	public void testFour()
 	{
 		long id = Thread.currentThread().getId();
-		System.out.println("Test14 in sampleOne..."+ id);
+		System.out.println("Test44 in sampleThree..."+ id);
 	}
+
 
 
 }

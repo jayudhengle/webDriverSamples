@@ -3,14 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testScripts.BookSearchTest">
+      <class name="parallelScripts.SampleThreeTest">
         <methods>
-          <include name="testFantacySearch"/>
-          <include name="tearDowm"/>
-          <include name="setUp"/>
-          <include name="testHorrorSearch"/>
+          <include name="testFour"/>
         </methods>
-      </class> <!-- testScripts.BookSearchTest -->
+      </class> <!-- parallelScripts.SampleThreeTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
