@@ -4,24 +4,8 @@
   <test name="ModuleOneTest">
   <parameter name="browser" value="chrome"></parameter>
     <classes>
-       <class name="parallelScripts.SampleOneTest"/> 
-       <class name="parallelScripts.SampleTwoTest"/> 
+       <class name="testScripts.BookSearchTest"/> 
     </classes>
   </test> <!-- Test -->
-  
-   <test name="ModuleTwoTest">
-  <parameter name="browser" value="chrome"></parameter>
-    <classes>
-       <class name="parallelScripts.SampleOneTest"/> 
-       <class name="parallelScripts.SampleTwoTest"/> 
-    </classes>
-  </test> <!-- Test -->
-  
-   <test name="ModuleThreeTest">
-  <parameter name="browser" value="chrome"></parameter>
-    <classes>
-       <class name="parallelScripts.SampleOneTest"/> 
-       <class name="parallelScripts.SampleTwoTest"/> 
-    </classes>
-  </test> <!-- Test -->
+
 </suite> <!-- Suite -->
